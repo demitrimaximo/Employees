@@ -1,0 +1,17 @@
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+*.log
+logs/
+target/
+.git/
+.gitignore
+Dockerfile
+docker-compose.yml
+.dockerignore
+.DS_Store
+Thumbs.db
+src/test/
