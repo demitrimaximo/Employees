@@ -22,6 +22,7 @@ REST API for employee management, developed with Spring Boot as part of the tech
 ## Getting Started
 
 ### Prerequisites
+
 Make sure you have the following installed:
 
 * Java 17
