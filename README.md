@@ -58,32 +58,58 @@ http://localhost:8080/swagger-ui/index.html
 | DELETE | /employees/{id}       | Delete an employee       |
 
 EXamples:
+
 POST
+
 http://localhost:8080/employees
+
 [
+
   {
+
     "firstName": "Manito",
+
     "secondName": "Carlos",
+
     "paternalLastName": "García",
+
     "maternalLastName": "López",
+
     "age": 35,
+
     "sex": "M",
+
     "birthDate": "15-03-1991",
+
     "position": "Java Developer",
+
     "active": false
+
   },
+
   
   {
+
     "firstName": "Manito",
+
     "secondName": "Sandoval",
+
     "paternalLastName": "García",
+
     "maternalLastName": "López",
+
     "age": 35,
+
     "sex": "M",
+
     "birthDate": "15-03-1991",
+
     "position": "Java Developer",
+
     "active": true
+
   }
+  
 ]
 
 GET
@@ -120,21 +146,6 @@ The project uses **JUnit 5** and **Mockito** for unit testing.
 Spring Boot Actuator provides a health endpoint:
 
 http://localhost:8080/actuator/health
-
-## Project Structure
-
-
-src/
-├── main/
-│   ├── java/
-│   │   └── ...
-│   └── resources/
-│       └── application.properties
-│
-└── test/
-    └── java/
-        └── ...
-...
 
 ## Notes
 This project was developed as a technical exercise for the INVEX selection process, following common REST API, Spring Boot, JPA, validation, exception handling, and testing practices.
