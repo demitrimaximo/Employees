@@ -57,79 +57,12 @@ http://localhost:8080/swagger-ui/index.html
 | PUT    | /employees/{id}       | Update an employee       |
 | DELETE | /employees/{id}       | Delete an employee       |
 
-EXamples:
-
-POST
-
-http://localhost:8080/employees
-
-[
-
-  {
-
-    "firstName": "Manito",
-
-    "secondName": "Carlos",
-
-    "paternalLastName": "García",
-
-    "maternalLastName": "López",
-
-    "age": 35,
-
-    "sex": "M",
-
-    "birthDate": "15-03-1991",
-
-    "position": "Java Developer",
-
-    "active": false
-
-  },
-
-  
-  {
-
-    "firstName": "Manito",
-
-    "secondName": "Sandoval",
-
-    "paternalLastName": "García",
-
-    "maternalLastName": "López",
-
-    "age": 35,
-
-    "sex": "M",
-
-    "birthDate": "15-03-1991",
-
-    "position": "Java Developer",
-
-    "active": true
-
-  }
-  
-]
-
-GET
-http://localhost:8080/employees/1
-
-PUT
-http://localhost:8080/employees/3
-{
-  "active": false
-}
-
-GET
-http://localhost:8080/employees/search?name=Manito
-Params: name = Manito
-
-DELETE
-http://localhost:8080/employees/3
-
-
 Check Swagger UI for request/response schemas and detailed API documentation.
+
+## API Testing
+
+A Postman collection called  APIcollectionsforEmployee.json is included in the postman/ directory.
+Import the collection into Postman to test the API endpoints.
 
 ## Database
 The application uses an H2 in-memory database, which is mainly intended for testing and development purposes.
